@@ -18,13 +18,13 @@
  */
 var app = {
     vars: {
-        introDone: false,
+        introDone: true,
         deviceReady: false
     },
     initialize: function() {
         this.bindEvents();
         this.intro();
-        debug.init();
+        //debug.init();
         //debug.show();
     },
     bindEvents: function() {
