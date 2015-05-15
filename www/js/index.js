@@ -23,7 +23,7 @@ var app = {
     },
     initialize: function() {
         this.bindEvents();
-        this.intro();
+        //this.intro();
         //debug.init();
         //debug.show();
     },
