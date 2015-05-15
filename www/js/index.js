@@ -37,14 +37,16 @@ var app = {
     },
     intro: function(){
 
-        $('#loader .logomarca').css({'top':$(window).height()}).animate({
-            'top':$(window).height()*20/100, 'opacity':1
+        $('#loader .logomarca').css({'top':$(window).height()*.40}).animate({
+            'opacity':1
         },3000,'easeOutQuad',function(){
-            $('#loader .logomarca .msg').fadeIn(function(){
+                
+            setTimeout(function(){
                 app.vars.introDone = true;
                 debug.log('intro done.');
                 if(app.vars.deviceReady) app.startApp();
-            });
+            },1500);
+            
         });
 
     }, 
@@ -52,7 +54,7 @@ var app = {
     startApp: function(){
         //debug.log('started app.');
         $('#loader .msg span').text('Carregando aplicação...');
-        window.open('http://www.engesp.com/sistema?largura=320');
+        window.open('http://www.engesp.com/sistema?largura=320&app=1.0.0');
         /*
         $("#iframe").html('<iframe src="http://www.engesp.com/sistema" width="100%" height="100%" fameborder="0">');
         $("#iframe").show();

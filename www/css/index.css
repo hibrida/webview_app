@@ -62,7 +62,6 @@ body {
 }
 
 #loader .msg {
-    display: none;
     position: absolute;
     width: 280px;
     left: 50%;
