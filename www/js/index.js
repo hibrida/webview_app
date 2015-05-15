@@ -24,7 +24,7 @@ var app = {
     initialize: function() {
         this.bindEvents();
         this.intro();
-        //debug.init();
+        debug.init();
         //debug.show();
     },
     bindEvents: function() {
