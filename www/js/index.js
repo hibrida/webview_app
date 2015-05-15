@@ -52,7 +52,7 @@ var app = {
     startApp: function(){
         //debug.log('started app.');
         $('#loader .msg span').text('Carregando aplicação...');
-        window.open('http://www.engesp.com/sistema');
+        window.open('http://www.engesp.com/sistema?largura=320');
         /*
         $("#iframe").html('<iframe src="http://www.engesp.com/sistema" width="100%" height="100%" fameborder="0">');
         $("#iframe").show();
